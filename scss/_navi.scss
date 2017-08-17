@@ -1,0 +1,38 @@
+.nav {
+	position: fixed;
+	top: 29px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1240px;
+	padding: 23px 35px 23px 38px;
+	background-color: $white;
+	z-index: 1000;
+}
+
+.nav__links {
+	font-family: $opensans;
+	font-weight: 700;
+}
+
+.nav__item {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+	color: $platinum;
+	&:not(:last-child) {
+		margin-right: 40px;
+	}
+	&.active {
+		color: $black;
+	}
+}
+
+.logo {
+	font-family: $raleway;
+	font-size: 30px;
+	font-weight: 600;
+	color: $sea-green;
+}

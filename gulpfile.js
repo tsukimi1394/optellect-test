@@ -42,7 +42,7 @@ gulp.task("build:icons", function() {
        .pipe(consolidate("lodash", { //template language
          glyphs: glyphs,
          fontName: "svg-icons",
-         fontPath: "./fonts/"
+         fontPath: "../fonts/"
        }))
        .pipe(gulp.dest("./assets/scss/icons/"));//generated scss files with classes
      })

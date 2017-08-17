@@ -1,0 +1,57 @@
+$global-font-icon: 'svg-icons';
+
+@font-face {
+ font-family: $global-font-icon;
+ src:url("../fonts/svg-icons.eot");
+ src:url("../fonts/svg-icons.?#iefix") format("embedded-opentype"),
+   url("../fonts/svg-icons.woff") format("woff"),
+   url("../fonts/svg-icons.ttf") format("truetype"),
+   url("../fonts/svg-icons.#svg-icons") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.icon {
+ font-family: $global-font-icon;
+
+ &:before {
+   /* Some common icon stuff */
+ }
+
+ &.icon--android {
+   &:before {
+     content: $icon-android;
+   }
+ }
+ &.icon--apple {
+   &:before {
+     content: $icon-apple;
+   }
+ }
+ &.icon--cloud {
+   &:before {
+     content: $icon-cloud;
+   }
+ }
+ &.icon--facebook {
+   &:before {
+     content: $icon-facebook;
+   }
+ }
+ &.icon--google-plus {
+   &:before {
+     content: $icon-google-plus;
+   }
+ }
+ &.icon--twitter {
+   &:before {
+     content: $icon-twitter;
+   }
+ }
+ &.icon--windows {
+   &:before {
+     content: $icon-windows;
+   }
+ }
+
+}

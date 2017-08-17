@@ -1,8 +1,10 @@
 section.video
-	.video__info
-		h2.video__title Watch the video
-		p.video__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
-		a(href="#", class="os") iOS
-		a(href="#", class="os") Android
-		a(href="#", class="os") Win
-	iframe(class="video__watch", src="https://player.vimeo.com/video/75620746", width="640", height="360", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+	.video__wrapper
+		.video__info
+			h2.video__title Watch the video
+			p.video__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+			.os
+				a(href="#", class="icon icon--apple")
+				a(href="#", class="icon icon--android")
+				a(href="#", class="icon icon--windows")
+		iframe(class="video__watch", src="https://player.vimeo.com/video/75620746", width="500", height="307", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)

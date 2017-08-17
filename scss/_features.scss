@@ -1,0 +1,121 @@
+.features {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.features__title {
+	margin-top: 20px;
+	text-align: center;
+	font-family: $raleway;
+	font-weight: 700;
+	color: $sea-green;
+	font-size: 28px;
+	line-height: 36px;
+	text-transform: uppercase;
+	position: relative;
+	background: url(../images/line.png) no-repeat;
+	background-position: center 40px;
+	padding-bottom: 22px;
+	&::before {
+		content: "";
+		width: 60px;
+		height: 1px;
+		background-color: $light-grey;
+		position: absolute;
+		top: 24%;
+		margin-left: -45px;
+		transform: translate(-50%, -50%);
+	}
+	&::after {
+		content: "";
+		width: 60px;
+		height: 1px;
+		background-color: $light-grey;
+		position: absolute;
+		top: 24%;
+		margin-left: 45px;
+		transform: translate(-50%, 50%);
+	}
+}
+
+.features__general {
+	margin-top: 60px;
+	text-align: center;
+	font-family: $opensans;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 36px;
+	color: $black;
+	padding: 0 150px;
+}
+
+.features__description {
+	margin-top: 85px;
+	display: flex;
+	margin-bottom: 80px;
+}
+
+.features__list {
+	margin: 70px 40px 0;
+	&-item {
+		list-style-type: none;
+		padding-right: 20px;
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.feature__name {
+	display: block;
+	color: $black;
+	font-family: $raleway;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 20px;
+	padding-left: 80px;
+	line-height: 36px;
+	&.feature__name--1 {
+		background: url(../images/1.png) no-repeat;
+		background-position: 0 0;
+	}
+	&.feature__name--2 {
+		background: url(../images/2.png) no-repeat;
+		background-position: 0 0;
+	}
+	&.feature__name--3 {
+		background: url(../images/3.png) no-repeat;
+		background-position: 0 0;
+	}
+	&.feature__name--4 {
+		background: url(../images/4.png) no-repeat;
+		background-position: 0 0;
+	}
+	&.feature__name--5 {
+		background: url(../images/5.png) no-repeat;
+		background-position: 0 0;
+	}
+	&.feature__name--6 {
+		background: url(../images/6.png) no-repeat;
+		background-position: 0 0;
+	}
+}
+
+.feature__description {
+	margin-left: 80px;
+	line-height: 24px;
+	color: $black;
+	font-size: 13px;
+	font-family: $opensans;
+	font-weight: 400;
+	display: block;
+}
+
+.features__img {
+	flex: 2 1 50%;
+	width: 581px;
+	height: 700px;
+	background-image: url(../images/screen.png);
+	background-repeat: no-repeat;
+	background-position: -48px 0;
+}

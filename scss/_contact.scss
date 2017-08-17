@@ -1,0 +1,150 @@
+.contact {
+	background: url('../images/bg-contact.jpg') top center no-repeat;
+	padding-top: 68px;
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1240px;
+		display: flex;
+		margin-top: 95px;
+		margin-bottom: 55px;
+	}
+}
+
+.contact__title {
+	@extend .features__title;
+	margin-top: 0;
+	line-height: 24px;
+	color: $white;
+	background: url(../images/line.png) no-repeat;
+	background-position: center 10px;
+}
+
+.contact__info {
+	flex: 1 1 100%;
+	padding-left: 60px;
+}
+
+.contact__subtitle {
+	font-family: $raleway;
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: 400;
+	color: $white;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.contact__text {
+	font-weight: 400;
+	font-family: $opensans;
+	line-height: 21px;
+	font-size: 14px;
+	color: $dark-pearl;
+	padding-right: 100px;
+	display: block;
+}
+
+.contact__social {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	.icon {
+		display: inline-block;
+		text-decoration: none;
+		color: $white;
+		position: relative;
+		padding: 21px;
+		border-radius: 999rem;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		&::before {
+			position: absolute;
+			font-size: 16px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&.icon--facebook {
+			background-color: $facebook;
+		}
+		&.icon--twitter {
+			background-color: $twitter;
+		}
+		&.icon--google-plus {
+			background-color: $google;
+		}
+	}
+}
+
+.contact__links {
+	color: $wisteria;
+	font-size: 14px;
+	line-height: 24px;
+	display: block;
+	font-family: $opensans;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.contact__form {
+	text-align: right;;
+	&-wrapper {
+		flex: 1 1 100%;
+	}
+}
+
+.contact__inputs {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.contact__input {
+	width: 270px;
+	border-radius: 2px;
+	padding: 16px 20px;
+	outline: none;
+	border: none;
+	color: $light-grey;
+	font-family: $opensans;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	&.contact__msg {
+		width: 100%;
+		height: 179px;
+		line-height: 24px;
+	}
+}
+
+.btn--contact {
+	background-color: $turquoise;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.copyright {
+	border-top: 1px solid $wet-asphalt;
+	color: $telegrey;
+	font-family: $opensans;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1240px;
+		display: flex;
+		justify-content: space-between;
+		padding: 25px 0;
+	}
+}
+
+.copyright__copy {
+	padding-left: 60px;
+	display: block;
+}
+
+.copyright__right {
+	display: block;
+}
