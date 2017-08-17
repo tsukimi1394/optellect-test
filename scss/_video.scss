@@ -43,6 +43,9 @@
 		border-radius: 999rem;
 		background-color: $aqua;
 		padding: 34px;
+		transform: perspective(1px) translateZ(0);
+		transition-duration: 0.3s;
+		transition-property: background;
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
@@ -52,6 +55,9 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+		}
+		&:hover {
+			background-color: $dark-black;
 		}
 	}
 }
