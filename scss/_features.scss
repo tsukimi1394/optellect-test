@@ -1,7 +1,9 @@
 .features {
 	max-width: 1240px;
 	margin: 0 auto;
+	margin-top: 200px;
 }
+
 
 .features__title {
 	margin-top: 20px;
@@ -64,6 +66,9 @@
 			margin-bottom: 60px;
 		}
 	}
+	@include respond-to(medium-screens) {
+		margin: 70px 20px 0; 
+	}
 }
 
 .feature__name {
@@ -99,6 +104,9 @@
 		background: url(../images/6.png) no-repeat;
 		background-position: 0 0;
 	}
+	@include respond-to(medium-screens) {
+		padding-left: 50px;
+	}
 }
 
 .feature__description {
@@ -109,13 +117,18 @@
 	font-family: $opensans;
 	font-weight: 400;
 	display: block;
+	@include respond-to(medium-screens) {
+		margin-left: 50px;
+	}
 }
 
 .features__img {
 	flex: 2 1 50%;
-	width: 581px;
 	height: 700px;
 	background-image: url(../images/screen.png);
 	background-repeat: no-repeat;
 	background-position: -48px 0;
+	@include respond-to(medium-screens) {
+		flex: 2 1 70%;
+	}
 }

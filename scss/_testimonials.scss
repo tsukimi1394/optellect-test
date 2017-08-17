@@ -15,11 +15,17 @@
 	width: 1240px;
 	margin: 20px auto;
 	position: relative;
+	@include respond-to(medium-screens) {
+		width: 800px;
+	}
 }
 
 .slider {
 	width: 1200px;
 	overflow: hidden;
+	@include respond-to(medium-screens) {
+		width: 760px;
+	}
 }
 
 .slider-wrapper {
@@ -31,6 +37,9 @@
 	width: 1200px;
 	transition: 2s;
 	padding: 0 85px;
+	@include respond-to(medium-screens) {
+		width: 760px;
+	}
 }
 
 .testimonials__photo {

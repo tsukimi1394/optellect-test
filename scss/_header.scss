@@ -93,6 +93,9 @@
 .header__images {
 	margin-top: 280px;
 	position: relative;
+	@include respond-to(medium-screens) {
+		margin-top: 223px;
+	}
 }
 
 .header__image {

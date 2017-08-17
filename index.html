@@ -7,10 +7,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <nav class="nav"><span class="logo">Mobileapp</span>
-      <div class="nav__links"><a class="nav__item active" href="#">Home</a><a class="nav__item" href="#">Features</a><a class="nav__item" href="#">Team</a><a class="nav__item" href="#">Testimonials</a><a class="nav__item" href="#">Contact</a></div>
+    <nav class="nav" role="navigation">
+      <div class="menu-icon" data-toggle-menu></div><span class="logo">Mobileapp</span>
+      <ul class="nav__links">
+        <li><a class="nav__item active" href="#home">Home</a></li>
+        <li><a class="nav__item" href="#features">Features</a></li>
+        <li><a class="nav__item" href="#team">Team</a></li>
+        <li><a class="nav__item" href="#testimonials">Testimonials</a></li>
+        <li><a class="nav__item" href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__wrapper">
         <div class="header__info">
           <h1 class="header__title">Introducing Mobileapp.</h1><span class="header__subtitle">Maecenas vitae tellus sapien. Praesent</span>
@@ -28,7 +35,7 @@
       </div>
     </header>
     <section class="features">
-      <h2 class="features__title">Key features</h2>
+      <h2 class="features__title" id="features">Key features</h2>
       <p class="features__general">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesant luctus mi quis nisi interdum eleifend.</p>
       <div class="features__description">
         <ul class="features__list">
@@ -55,7 +62,7 @@
       </div>
     </section>
     <section class="team">
-      <h2 class="team__title">Our team</h2>
+      <h2 class="team__title" id="team">Our team</h2>
       <p class="team__general">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesant luctus mi quis nisi interdum eleifend.</p>
       <ul class="team__members">
         <li class="team__member">
@@ -85,7 +92,7 @@
       </ul>
     </section>
     <section class="testimonials">
-      <h2 class="testimonials__title">What our customer's say</h2><span class="underlined"></span>
+      <h2 class="testimonials__title" id="testimonials">What our customer's say</h2><span class="underlined"></span>
       <div class="slider-box">
         <div class="slider">
           <div class="slider-wrapper">
@@ -116,7 +123,7 @@
       </div>
     </section>
     <section class="contact">
-      <h2 class="contact__title">Contact us</h2>
+      <h2 class="contact__title" id="contact">Contact us</h2>
       <div class="contact__wrapper">
         <div class="contact__info"><span class="contact__subtitle">Get in touch with us</span><span class="contact__text">Nunc urna est, tristique et varlus at, pharetra nec enim. Quilisque rhoncus lacus fringilla nulla sollicitudin tristique.</span>
           <div class="contact__social"><a class="icon icon--facebook" href="#"></a><a class="icon icon--twitter" href="#"> </a><a class="icon icon--google-plus" href="#"></a></div><a class="contact__links" href="tel: +XX-XXXX-XXXX-XX">+XX-XXXX-XXXX-XX</a><a class="contact__links" href="mailto: Businessname@gmail.com">Businessname@gmail.com</a>

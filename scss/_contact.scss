@@ -1,6 +1,7 @@
 .contact {
 	background: url('../images/bg-contact.jpg') top center no-repeat;
 	padding-top: 68px;
+	background-size: cover;
 	&__wrapper {
 		margin: 0 auto;
 		max-width: 1240px;
@@ -88,7 +89,10 @@
 }
 
 .contact__form {
-	text-align: right;;
+	text-align: right;
+	@include respond-to(medium-screens) {
+		margin-right: 20px;
+	}
 	&-wrapper {
 		flex: 1 1 100%;
 	}
@@ -111,6 +115,9 @@
 	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 30px;
+	@include respond-to(medium-screens) {
+		width: 100%;
+	}
 	&.contact__msg {
 		width: 100%;
 		height: 179px;
@@ -147,4 +154,5 @@
 
 .copyright__right {
 	display: block;
+	padding-right: 60px;
 }
