@@ -1,211 +1,35 @@
 .nav {
-	position: fixed;
+	/*position: fixed;
 	top: 29px;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%);*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
-	max-width: 1240px;
+	width: 1240px;
+	margin: 0 auto;
 	padding: 23px 35px 23px 38px;
 	background-color: $white;
 	z-index: 1000;
 }
 
-[role="navigation"] {
-	@include respond-to(tablets) {
-		order: 4;
-	}
-	@include respond-to(handhelds) {
-		flex-basis: auto;
-		order: 1;
-	}
-
-	flex-basis: 100%;
-}
-
 .nav__links {
 	font-family: $opensans;
 	font-weight: 700;
-	@include respond-to(tablets) {
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-	@include respond-to(handhelds) {
-		display: none;
-	}	
-	display: flex;
-	li {
-		list-style-type: none;
-		display: block;
-		&:not(:last-child) {
-			margin-right: 40px;
-		}
-	}
 }
 
 .nav__item {
-	display: block;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 13px;
 	color: $platinum;
-	
-	&.active {
+	&:not(:last-child) {
+		margin-right: 40px;
+	}
+	&:hover {
 		color: $black;
 	}
 }
-
-.menu-icon {
-	@include respond-to(handhelds) {
-		position: relative;
-		z-index: 1000;
-
-		display: inline-block;
-		width: 23px;
-		height: 3px;
-		margin-top: 38px;
-		margin-right: -3px;
-		margin-left: 20px;
-
-		background-color: $sea-green;
-
-		cursor: pointer;
-		&::before {
-			content: "";
-
-			position: absolute;
-			top: -8px;
-			left: 0;
-
-			width: 23px;
-			height: 3px;
-
-			background-color: $sea-green;
-		}
-		&::after {
-			content: "";
-
-			position: absolute;
-			top: 8px;
-			left: 0;
-
-			width: 23px;
-			height: 3px;
-
-			background-color: $sea-green;
-		}
-		&.is-open {
-			position: fixed;
-			top: 0;
-			& ~ .nav__links {
-				position: fixed;
-				top: -16px;
-				right: 0;
-				bottom: -16px;
-				left: 0;
-				z-index: 200;
-
-				display: block;
-				padding: 0;
-				padding-top: 15px;
-				padding-left: 60px;
-
-				background-color: rgba(0,0,0,.9);
-
-				color: $sea-green;
-				list-style: none;
-				li {
-					display: block;
-					padding: 7px;
-				}
-				a {
-					color: $sea-green;
-					text-decoration: none;
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-	}
-	@include respond-to(tablets) {
-		position: relative;
-		z-index: 1000;
-
-		display: inline-block;
-		width: 23px;
-		height: 3px;
-		margin-top: 38px;
-		margin-right: -3px;
-		margin-left: 20px;
-
-		background-color: $sea-green;
-
-		cursor: pointer;
-		&::before {
-			content: "";
-
-			position: absolute;
-			top: -8px;
-			left: 0;
-
-			width: 23px;
-			height: 3px;
-
-			background-color: $sea-green;
-		}
-		&::after {
-			content: "";
-
-			position: absolute;
-			top: 8px;
-			left: 0;
-
-			width: 23px;
-			height: 3px;
-
-			background-color: $sea-green;
-		}
-		&.is-open {
-			position: fixed;
-			top: 0;
-			& ~ .nav__links {
-				position: fixed;
-				top: -16px;
-				right: 0;
-				bottom: -16px;
-				left: 0;
-				z-index: 200;
-
-				display: block;
-				padding: 0;
-				padding-top: 15px;
-				padding-left: 60px;
-
-				background-color: rgba(0,0,0,.9);
-
-				color: $sea-green;
-				list-style: none;
-				li {
-					display: block;
-					padding: 7px;
-				}
-				a {
-					color: $sea-green;
-					text-decoration: none;
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-	}
-	display: none;
-}
-
-
 
 .logo {
 	font-family: $raleway;
