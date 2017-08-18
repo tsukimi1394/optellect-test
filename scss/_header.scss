@@ -3,6 +3,16 @@
 	height: 100vh;
 
 	background: url('../images/bg-hero.jpg') top center no-repeat;
+	background-size: cover;
+
+	@include respond-to(tablets)
+	{
+		background-size: auto;
+	}
+	@include respond-to(handhelds)
+	{
+		background-size: auto;
+	}
 	&__wrapper
 	{
 		display: flex;
@@ -11,6 +21,10 @@
 		margin: 0 auto;
 
 		justify-content: space-between;
+		@include respond-to(wide-screens)
+		{
+			margin-top: 75px;
+		}
 	}
 }
 
@@ -19,6 +33,10 @@
 	margin-top: 150px;
 	margin-left: 35px;
 
+	@include respond-to(medium-screens)
+	{
+		margin-top: 100px;
+	}
 	@include respond-to(tablets)
 	{
 		margin-top: 65px;
@@ -171,7 +189,7 @@
 
 	@include respond-to(medium-screens)
 	{
-		margin-top: 223px;
+		margin-top: 95px;
 	}
 	@include respond-to(tablets)
 	{
@@ -198,6 +216,10 @@
 	background-position: 0 0;
 	background-size: 330px 590px;
 
+	@include respond-to(medium-screens)
+	{
+		right: 88px;
+	}
 	@include respond-to(tablets)
 	{
 		top: 18px;
@@ -223,6 +245,10 @@
 		background-position: 0 0;
 		background-size: 345px 649px;
 
+		@include respond-to(medium-screens)
+		{
+			right: 0;
+		}
 		@include respond-to(tablets)
 		{
 			top: -42px;
