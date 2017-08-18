@@ -201,9 +201,9 @@
 
 .header {
   height: 760px;
+  padding-top: 29px;
   background: url("../images/bg-hero.jpg") top center no-repeat;
   background-size: cover;
-  padding-top: 29px;
 }
 
 .header__wrapper {
@@ -271,7 +271,7 @@
   border-right: 1px solid currentColor;
 }
 
-.link.icon {
+.link.download {
   font-size: 20px;
   font-weight: 600;
   position: relative;
@@ -282,10 +282,11 @@
   text-decoration: none;
   color: #fff;
   border-radius: 3px;
-  background-color: #1ab798;
+  background: url(../images/cloud.png) no-repeat #1ab798;
+  background-position: 10px center;
 }
 
-.link.icon::before {
+.link.download::before {
   font-size: 24px;
   position: absolute;
   top: 50%;
@@ -294,7 +295,7 @@
   transform: translateY(-50%);
 }
 
-.link.icon span {
+.link.download span {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -975,9 +976,9 @@
   }
 
   .header {
-    background-size: auto;
     height: 100vh;
     padding-top: 0;
+    background-size: auto;
   }
 
   .header__info {
@@ -992,7 +993,7 @@
     text-align: left;
   }
 
-  .link.icon {
+  .link.download {
     font-size: 16px;
     margin-top: 50px;
   }
@@ -1190,8 +1191,8 @@
   }
 
   .header {
-    background-size: auto;
     height: 100vh;
+    background-size: auto;
   }
 
   .header__info {
@@ -1210,7 +1211,7 @@
     font-size: 14px;
   }
 
-  .link.icon {
+  .link.download {
     font-size: 16px;
   }
 

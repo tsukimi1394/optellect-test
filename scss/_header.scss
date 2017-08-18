@@ -1,22 +1,23 @@
 .header
 {
 	height: 760px;
+	padding-top: 29px;
 
 	background: url('../images/bg-hero.jpg') top center no-repeat;
 	background-size: cover;
 
-	padding-top: 29px;
-
 	@include respond-to(tablets)
 	{
-		background-size: auto;
 		height: 100vh;
+
+		background-size: auto;
 	}
 	@include respond-to(handhelds)
 	{
-		background-size: auto;
 		height: 100vh;
 		padding-top: 0;
+
+		background-size: auto;
 	}
 	&__wrapper
 	{
@@ -137,7 +138,7 @@
 
 
 
-.link.icon
+.link.download
 {
 	font-size: 20px;
 	font-weight: 600;
@@ -154,7 +155,8 @@
 
 	color: $white;
 	border-radius: 3px;
-	background-color: $sea-green;
+	background: url(../images/cloud.png) no-repeat $sea-green;
+	background-position: 10px center;
 
 	@include respond-to(tablets)
 	{
