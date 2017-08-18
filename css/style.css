@@ -71,32 +71,56 @@
   /* Some common icon stuff */
 }
 
-.icon.icon--android:before {
+.icon.icon--1:before {
   content: "";
 }
 
-.icon.icon--apple:before {
+.icon.icon--2:before {
   content: "";
 }
 
-.icon.icon--cloud:before {
+.icon.icon--3:before {
   content: "";
 }
 
-.icon.icon--facebook:before {
+.icon.icon--4:before {
   content: "";
 }
 
-.icon.icon--google-plus:before {
+.icon.icon--5:before {
   content: "";
 }
 
-.icon.icon--twitter:before {
+.icon.icon--6:before {
   content: "";
 }
 
-.icon.icon--windows:before {
+.icon.icon--android:before {
   content: "";
+}
+
+.icon.icon--apple:before {
+  content: "";
+}
+
+.icon.icon--cloud:before {
+  content: "";
+}
+
+.icon.icon--facebook:before {
+  content: "";
+}
+
+.icon.icon--google-plus:before {
+  content: "";
+}
+
+.icon.icon--twitter:before {
+  content: "";
+}
+
+.icon.icon--windows:before {
+  content: "";
 }
 
 .logo {
@@ -176,9 +200,10 @@
 }
 
 .header {
-  height: 100vh;
+  height: 760px;
   background: url("../images/bg-hero.jpg") top center no-repeat;
   background-size: cover;
+  padding-top: 29px;
 }
 
 .header__wrapper {
@@ -341,6 +366,17 @@
   margin-bottom: 60px;
 }
 
+.features__list-item.icon {
+  position: relative;
+}
+
+.features__list-item.icon::before {
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  color: #28bc9e;
+}
+
 .feature__name {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -350,36 +386,6 @@
   margin-bottom: 20px;
   padding-left: 80px;
   color: #282528;
-}
-
-.feature__name.feature__name--1 {
-  background: url(../images/1.png) no-repeat;
-  background-position: 0 0;
-}
-
-.feature__name.feature__name--2 {
-  background: url(../images/2.png) no-repeat;
-  background-position: 0 0;
-}
-
-.feature__name.feature__name--3 {
-  background: url(../images/3.png) no-repeat;
-  background-position: 0 0;
-}
-
-.feature__name.feature__name--4 {
-  background: url(../images/4.png) no-repeat;
-  background-position: 0 0;
-}
-
-.feature__name.feature__name--5 {
-  background: url(../images/5.png) no-repeat;
-  background-position: 0 0;
-}
-
-.feature__name.feature__name--6 {
-  background: url(../images/6.png) no-repeat;
-  background-position: 0 0;
 }
 
 .feature__description {
@@ -970,6 +976,8 @@
 
   .header {
     background-size: auto;
+    height: 100vh;
+    padding-top: 0;
   }
 
   .header__info {
@@ -1183,6 +1191,7 @@
 
   .header {
     background-size: auto;
+    height: 100vh;
   }
 
   .header__info {

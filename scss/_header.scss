@@ -1,17 +1,22 @@
 .header
 {
-	height: 100vh;
+	height: 760px;
 
 	background: url('../images/bg-hero.jpg') top center no-repeat;
 	background-size: cover;
 
+	padding-top: 29px;
+
 	@include respond-to(tablets)
 	{
 		background-size: auto;
+		height: 100vh;
 	}
 	@include respond-to(handhelds)
 	{
 		background-size: auto;
+		height: 100vh;
+		padding-top: 0;
 	}
 	&__wrapper
 	{

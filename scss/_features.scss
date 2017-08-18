@@ -3,8 +3,8 @@
 	max-width: 1240px;
 	margin: 0 auto;
 
-	
-	@include respond-to(wide-screens) {
+	@include respond-to(wide-screens)
+	{
 		margin-top: 150px;
 	}
 	@include respond-to(tablets)
@@ -93,6 +93,20 @@
 	}
 }
 
+.features__list-item.icon
+{
+	position: relative;
+	&::before
+	{
+		font-size: 36px;
+
+		position: absolute;
+		top: 0;
+
+		color: $greeny;
+	}
+}
+
 .feature__name
 {
 	font-family: $raleway;
@@ -110,36 +124,6 @@
 	@include respond-to(medium-screens)
 	{
 		padding-left: 50px;
-	}
-	&.feature__name--1
-	{
-		background: url(../images/1.png) no-repeat;
-		background-position: 0 0;
-	}
-	&.feature__name--2
-	{
-		background: url(../images/2.png) no-repeat;
-		background-position: 0 0;
-	}
-	&.feature__name--3
-	{
-		background: url(../images/3.png) no-repeat;
-		background-position: 0 0;
-	}
-	&.feature__name--4
-	{
-		background: url(../images/4.png) no-repeat;
-		background-position: 0 0;
-	}
-	&.feature__name--5
-	{
-		background: url(../images/5.png) no-repeat;
-		background-position: 0 0;
-	}
-	&.feature__name--6
-	{
-		background: url(../images/6.png) no-repeat;
-		background-position: 0 0;
 	}
 }
 

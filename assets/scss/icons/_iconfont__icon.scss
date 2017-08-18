@@ -18,6 +18,36 @@ $global-font-icon: 'svg-icons';
    /* Some common icon stuff */
  }
 
+ &.icon--1 {
+   &:before {
+     content: $icon-1;
+   }
+ }
+ &.icon--2 {
+   &:before {
+     content: $icon-2;
+   }
+ }
+ &.icon--3 {
+   &:before {
+     content: $icon-3;
+   }
+ }
+ &.icon--4 {
+   &:before {
+     content: $icon-4;
+   }
+ }
+ &.icon--5 {
+   &:before {
+     content: $icon-5;
+   }
+ }
+ &.icon--6 {
+   &:before {
+     content: $icon-6;
+   }
+ }
  &.icon--android {
    &:before {
      content: $icon-android;
