@@ -21,10 +21,6 @@
 		margin: 0 auto;
 
 		justify-content: space-between;
-		@include respond-to(wide-screens)
-		{
-			margin-top: 75px;
-		}
 	}
 }
 

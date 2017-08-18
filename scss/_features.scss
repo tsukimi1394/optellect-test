@@ -3,6 +3,10 @@
 	max-width: 1240px;
 	margin: 0 auto;
 
+	
+	@include respond-to(wide-screens) {
+		margin-top: 150px;
+	}
 	@include respond-to(tablets)
 	{
 		margin-top: 60px;
