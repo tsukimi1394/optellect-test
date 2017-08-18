@@ -1066,6 +1066,10 @@
     padding: 0 30px;
   }
 
+  .team__member {
+    margin-right: 0;
+  }
+
   .testimonials__title {
     background-position: center 75px;
   }

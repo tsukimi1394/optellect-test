@@ -1,26 +1,22 @@
-.header
-{
+.header {
 	height: 760px;
 	padding-top: 29px;
 
 	background: url('../images/bg-hero.jpg') top center no-repeat;
 	background-size: cover;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		height: 100vh;
 
 		background-size: auto;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		height: 100vh;
 		padding-top: 0;
 
 		background-size: auto;
 	}
-	&__wrapper
-	{
+	&__wrapper {
 		display: flex;
 
 		max-width: 1240px;
@@ -30,21 +26,17 @@
 	}
 }
 
-.header__info
-{
+.header__info {
 	margin-top: 150px;
 	margin-left: 35px;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		margin-top: 100px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		margin-top: 65px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		margin: 0 auto;
 		margin-top: 120px;
 
@@ -52,8 +44,7 @@
 	}
 }
 
-.header__title
-{
+.header__title {
 	font-family: $raleway;
 	font-size: 42px;
 	font-weight: 700;
@@ -63,14 +54,12 @@
 
 	color: $white;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		font-size: 36px;
 	}
 }
 
-.header__subtitle
-{
+.header__subtitle {
 	font-family: $opensans;
 	font-size: 22px;
 	font-weight: 600;
@@ -80,14 +69,12 @@
 
 	color: $white;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		font-size: 18px;
 	}
 }
 
-.header__list
-{
+.header__list {
 	font-family: $opensans;
 	font-size: 16px;
 	font-weight: 400;
@@ -96,30 +83,25 @@
 
 	color: $white;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		font-size: 14px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		margin-right: 20px;
 		margin-left: 20px;
 
 		text-align: left;
 	}
-	&-item
-	{
+	&-item {
 		position: relative;
 
 		padding-left: 25px;
 
 		list-style-type: none;
-		&:not(:last-child)
-		{
+		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
-		&::before
-		{
+		&::before {
 			position: absolute;
 			top: 50%;
 			left: -5px;
@@ -138,8 +120,7 @@
 
 
 
-.link.download
-{
+.link.download {
 	font-size: 20px;
 	font-weight: 600;
 
@@ -158,18 +139,15 @@
 	background: url(../images/cloud.png) no-repeat $sea-green;
 	background-position: 10px center;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		font-size: 16px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		font-size: 16px;
 
 		margin-top: 50px;
 	}
-	&::before
-	{
+	&::before {
 		font-size: 24px;
 
 		position: absolute;
@@ -178,34 +156,28 @@
 
 		transform: translateY(-50%);
 	}
-	span
-	{
+	span {
 		font-family: $opensans;
 	}
 }
 
-.header__images
-{
+.header__images {
 	position: relative;
 
 	margin-top: 150px;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		margin-top: 95px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		margin-top: 65px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		display: none;
 	}
 }
 
-.header__image
-{
+.header__image {
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -219,12 +191,10 @@
 	background-position: 0 0;
 	background-size: 330px 590px;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		right: 88px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		top: 18px;
 		right: 55px;
 
@@ -233,8 +203,7 @@
 
 		background-size: 270px 450px;
 	}
-	&:last-child
-	{
+	&:last-child {
 		position: absolute;
 		z-index: 1;
 		top: -60px;
@@ -248,12 +217,10 @@
 		background-position: 0 0;
 		background-size: 345px 649px;
 
-		@include respond-to(medium-screens)
-		{
+		@include respond-to(medium-screens) {
 			right: 0;
 		}
-		@include respond-to(tablets)
-		{
+		@include respond-to(tablets) {
 			top: -42px;
 			right: 0;
 

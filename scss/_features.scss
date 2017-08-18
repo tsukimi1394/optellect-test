@@ -1,30 +1,24 @@
-.features
-{
+.features {
 	max-width: 1240px;
 	margin: 0 auto;
 
-	@include respond-to(wide-screens)
-	{
+	@include respond-to(wide-screens) {
 		margin-top: 150px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		margin-top: 60px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		margin-top: 60px;
 	}
 }
 
 
-.features__title
-{
+.features__title {
 	@extend %underlined-title;
 }
 
-.features__general
-{
+.features__general {
 	font-family: $opensans;
 	font-size: 18px;
 	font-weight: 400;
@@ -37,8 +31,7 @@
 
 	color: $black;
 
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		font-size: 16px;
 		line-height: 28px;
 
@@ -46,58 +39,47 @@
 	}
 }
 
-.features__description
-{
+.features__description {
 	display: flex;
 
 	margin-top: 85px;
 	margin-bottom: 80px;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		flex-flow: wrap;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		margin-top: 30px;
 
 		flex-flow: wrap;
 	}
 }
 
-.features__list
-{
+.features__list {
 	margin: 70px 40px 0;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		order: 2;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		order: 2;
 	}
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		margin: 70px 20px 0;
 	}
-	&-item
-	{
+	&-item {
 		padding-right: 20px;
 
 		list-style-type: none;
-		&:not(:last-child)
-		{
+		&:not(:last-child) {
 			margin-bottom: 60px;
 		}
 	}
 }
 
-.features__list-item.icon
-{
+.features__list-item.icon {
 	position: relative;
-	&::before
-	{
+	&::before {
 		font-size: 36px;
 
 		position: absolute;
@@ -107,8 +89,7 @@
 	}
 }
 
-.feature__name
-{
+.feature__name {
 	font-family: $raleway;
 	font-size: 18px;
 	font-weight: 700;
@@ -121,14 +102,12 @@
 
 	color: $black;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		padding-left: 50px;
 	}
 }
 
-.feature__description
-{
+.feature__description {
 	font-family: $opensans;
 	font-size: 13px;
 	font-weight: 400;
@@ -140,14 +119,12 @@
 
 	color: $black;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		margin-left: 50px;
 	}
 }
 
-.features__img
-{
+.features__img {
 	height: 700px;
 
 	background-image: url(../images/screen.png);
@@ -155,18 +132,15 @@
 	background-position: -48px 0;
 
 	flex: 2 1 50%;
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		flex: 2 1 70%;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		background-position: center 0;
 
 		order: 1;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		height: 400px;
 
 		background-position: center 0;

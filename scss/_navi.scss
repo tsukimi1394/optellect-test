@@ -1,18 +1,15 @@
-.logo
-{
+.logo {
 	font-family: $raleway;
 	font-size: 30px;
 	font-weight: 600;
-	&__link
-	{
+	&__link {
 		text-decoration: none;
 
 		color: $sea-green;
 	}
 }
 
-.nav
-{
+.nav {
 	position: relative;
 	z-index: 1000;
 
@@ -26,16 +23,13 @@
 
 	justify-content: space-between;
 	align-items: center;
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		width: 769px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		width: 640px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		position: fixed;
 		top: 0;
 
@@ -43,8 +37,7 @@
 	}
 }
 
-.nav__btn
-{
+.nav__btn {
 	position: absolute;
 	top: 50%;
 	right: 20px;
@@ -58,12 +51,10 @@
 
 	color: $sea-green;
 
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		display: block;
 	}
-	&::after
-	{
+	&::after {
 		position: absolute;
 		top: 50%;
 		left: 0;
@@ -80,15 +71,12 @@
 	}
 }
 
-.nav.is-active > .nav__links
-{
+.nav.is-active > .nav__links {
 	display: block;
 }
 
-.nav__links
-{
-	@include respond-to(handhelds)
-	{
+.nav__links {
+	@include respond-to(handhelds) {
 		position: fixed;
 		z-index: 3;
 		top: 80px;
@@ -103,8 +91,7 @@
 	}
 }
 
-.nav__links-item
-{
+.nav__links-item {
 	font-family: $opensans;
 	font-size: 13px;
 	font-weight: 700;
@@ -114,8 +101,7 @@
 
 	color: $platinum;
 
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		font-size: 22px;
 
 		display: block;
@@ -127,17 +113,14 @@
 
 		color: $white;
 	}
-	&:not(:last-child)
-	{
+	&:not(:last-child) {
 		margin-right: 40px;
 
-		@include respond-to(tablets)
-		{
+		@include respond-to(tablets) {
 			margin-right: 20px;
 		}
 	}
-	&:hover
-	{
+	&:hover {
 		color: $black;
 	}
 }

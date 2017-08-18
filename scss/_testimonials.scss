@@ -1,31 +1,25 @@
-.testimonials
-{
+.testimonials {
 	max-width: 1240px;
 	margin: 0 auto;
 }
 
-.testimonials__title
-{
+.testimonials__title {
 	margin-top: 120px;
 	margin-bottom: 20px;
 
 	@extend %underlined-title;
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		background-position: center 75px;
-		&::after
-		{
+		&::after {
 			display: none;
 		}
-		&::before
-		{
+		&::before {
 			display: none;
 		}
 	}
 }
 
-.slider-box
-{
+.slider-box {
 	position: relative;
 
 	display: flex;
@@ -34,75 +28,61 @@
 	margin: 20px auto;
 
 	justify-content: center;
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		width: 800px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		width: 650px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		width: 320px;
 	}
 }
 
-.slider
-{
+.slider {
 	overflow: hidden;
 
 	width: 1200px;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		width: 760px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		width: 600px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		width: 300px;
 	}
 }
 
-.slider-wrapper
-{
+.slider-wrapper {
 	display: flex;
 
 	width: 1000%;
 }
 
-.slider__item
-{
+.slider__item {
 	width: 1200px;
 	padding: 0 85px;
 
 	transition: 2s;
 
-	@include respond-to(medium-screens)
-	{
+	@include respond-to(medium-screens) {
 		width: 760px;
 	}
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		width: 600px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		width: 300px;
 		padding: 0 5px;
 	}
 }
 
-.testimonials__photo
-{
+.testimonials__photo {
 	width: 100%;
 	height: auto;
-	&-wrapper
-	{
+	&-wrapper {
 		width: 100px;
 		height: 100px;
 		margin: 0 auto;
@@ -113,8 +93,7 @@
 	}
 }
 
-.testimonials__name
-{
+.testimonials__name {
 	font-family: $opensans;
 	font-size: 16px;
 	font-weight: 600;
@@ -124,8 +103,7 @@
 	text-align: center;
 }
 
-.testimonials__workplace
-{
+.testimonials__workplace {
 	font-family: $opensans;
 	font-size: 13px;
 	font-weight: 400;
@@ -137,8 +115,7 @@
 	text-align: center;
 }
 
-.testimonials__text
-{
+.testimonials__text {
 	font-family: $opensans;
 	font-size: 18px;
 	font-weight: 400;
@@ -152,15 +129,13 @@
 	background: url(../images/quotes.png) no-repeat;
 	background-position: 0 0;
 
-	@include respond-to(tablets)
-	{
+	@include respond-to(tablets) {
 		font-size: 16px;
 		line-height: 30px;
 
 		padding-left: 60px;
 	}
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		font-size: 14px;
 		line-height: 20px;
 
@@ -168,15 +143,13 @@
 	}
 }
 
-.slider-nav
-{
+.slider-nav {
 	margin-bottom: 120px;
 
 	text-align: center;
 }
 
-.circle
-{
+.circle {
 	display: inline-block;
 
 	width: 10px;
@@ -186,18 +159,15 @@
 
 	border-radius: 100%;
 	background: $hoar;
-	&:not(:last-child)
-	{
+	&:not(:last-child) {
 		margin-right: 8px;
 	}
-	&:hover
-	{
+	&:hover {
 		cursor: pointer;
 
 		background: $sea-green;
 	}
-	&.active
-	{
+	&.active {
 		background: $sea-green;
 	}
 }

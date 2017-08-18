@@ -1,18 +1,15 @@
-.team
-{
+.team {
 	max-width: 1240px;
 	margin: 0 auto;
 }
 
-.team__title
-{
+.team__title {
 	margin-top: 120px;
 
 	@extend %underlined-title;
 }
 
-.team__general
-{
+.team__general {
 	font-family: $opensans;
 	font-size: 16px;
 	font-weight: 600;
@@ -25,14 +22,12 @@
 
 	color: $black;
 
-	@include respond-to(handhelds)
-	{
+	@include respond-to(handhelds) {
 		padding: 0 30px;
 	}
 }
 
-.team__members
-{
+.team__members {
 	display: flex;
 
 	margin-top: 105px;
@@ -41,8 +36,7 @@
 	flex-flow: wrap;
 }
 
-.team__member
-{
+.team__member {
 	font-family: $opensans;
 
 	position: relative;
@@ -53,8 +47,11 @@
 	margin-bottom: 30px;
 
 	list-style-type: none;
-	&:hover .team__info
-	{
+
+	@include respond-to(handhelds) {
+		margin-right: 0;
+	}
+	&:hover .team__info {
 		position: absolute;
 		top: 0;
 		bottom: 68px;
@@ -68,8 +65,7 @@
 
 		color: $white;
 		background-color: rgba(33, 177, 154, .75);
-		.team__info-title
-		{
+		.team__info-title {
 			font-size: 16px;
 			font-weight: 600;
 
@@ -77,8 +73,7 @@
 
 			margin-bottom: 20px;
 		}
-		.team__info-desc
-		{
+		.team__info-desc {
 			font-size: 16px;
 			font-weight: 400;
 
@@ -86,15 +81,13 @@
 
 			margin-bottom: 65px;
 		}
-		.team__social
-		{
+		.team__social {
 			display: flex;
 
 			margin-top: 30px;
 
 			justify-content: center;
-			.icon
-			{
+			.icon {
 				position: relative;
 
 				display: inline-block;
@@ -105,12 +98,10 @@
 
 				color: $white;
 				background-color: rgba(15, 114, 96, .75);
-				&:not(:last-child)
-				{
+				&:not(:last-child) {
 					margin-right: 20px;
 				}
-				&::before
-				{
+				&::before {
 					font-size: 18px;
 
 					position: absolute;
@@ -122,30 +113,25 @@
 			}
 		}
 	}
-	&:hover .team__name
-	{
+	&:hover .team__name {
 		color: $meadow;
 	}
 }
 
-.team__photo
-{
+.team__photo {
 	width: 100%;
 	height: auto;
-	&-wrapper
-	{
+	&-wrapper {
 		width: 270px;
 		height: 300px;
 	}
 }
 
-.team__info
-{
+.team__info {
 	display: none;
 }
 
-.team__name
-{
+.team__name {
 	font-size: 18px;
 	line-height: 24px;
 
@@ -158,8 +144,7 @@
 	color: $very-dark-black;
 }
 
-.team__position
-{
+.team__position {
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;

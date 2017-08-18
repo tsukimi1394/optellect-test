@@ -1,5 +1,4 @@
-%underlined-title
-{
+%underlined-title {
 	font-family: $raleway;
 	font-size: 28px;
 	font-weight: 700;
@@ -16,8 +15,7 @@
 	color: $sea-green;
 	background: url(../images/line.png) no-repeat;
 	background-position: center 40px;
-	&::before
-	{
+	&::before {
 		position: absolute;
 		top: 24%;
 
@@ -30,8 +28,7 @@
 
 		background-color: $light-grey;
 	}
-	&::after
-	{
+	&::after {
 		position: absolute;
 		top: 24%;
 
