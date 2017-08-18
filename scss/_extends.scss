@@ -1,0 +1,47 @@
+%underlined-title
+{
+	font-family: $raleway;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 36px;
+
+	position: relative;
+
+	margin-top: 20px;
+	padding-bottom: 22px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $sea-green;
+	background: url(../images/line.png) no-repeat;
+	background-position: center 40px;
+	&::before
+	{
+		position: absolute;
+		top: 24%;
+
+		width: 60px;
+		height: 1px;
+		margin-left: -45px;
+
+		content: '';
+		transform: translate(-50%, -50%);
+
+		background-color: $light-grey;
+	}
+	&::after
+	{
+		position: absolute;
+		top: 24%;
+
+		width: 60px;
+		height: 1px;
+		margin-left: 45px;
+
+		content: '';
+		transform: translate(-50%, 50%);
+
+		background-color: $light-grey;
+	}
+}

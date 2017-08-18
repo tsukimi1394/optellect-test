@@ -1,69 +1,133 @@
-.video {
+.video
+{
 	background-color: $turquoise;
-	&__wrapper {
+	&__wrapper
+	{
+		display: flex;
+
 		max-width: 1240px;
 		margin: 0 auto;
-		display: flex;
-		justify-content: space-between;
 		padding: 72px 32px;
+
+		justify-content: space-between;
+		@include respond-to(tablets)
+		{
+			flex-flow: wrap;
+		}
+		@include respond-to(handhelds)
+		{
+			flex-flow: wrap;
+		}
 	}
 }
 
-.video__info {
-	flex: 1 1 100%;
+.video__info
+{
 	margin-right: 100px;
+
+	flex: 1 1 100%;
+	@include respond-to(tablets)
+	{
+		margin-bottom: 30px;
+	}
+	@include respond-to(handhelds)
+	{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
 }
 
-.video__title {
-	color: $dark-black;
+.video__title
+{
 	font-family: $raleway;
-	font-weight: 700;
 	font-size: 28px;
+	font-weight: 700;
 	line-height: 18px;
-	text-transform: uppercase;
+
 	margin-bottom: 25px;
+
+	text-transform: uppercase;
+
+	color: $dark-black;
+
+	@include respond-to(handhelds)
+	{
+		text-align: center;
+	}
 }
 
-.video__description {
-	color: $white;
+.video__description
+{
 	font-family: $opensans;
-	font-weight: 400;
 	font-size: 16px;
+	font-weight: 400;
 	line-height: 26px;
+
+	color: $white;
+
+	@include respond-to(handhelds)
+	{
+		text-align: center;
+	}
 }
 
-.os {
+.os
+{
 	display: flex;
+
 	margin-top: 30px;
-	.icon {
+
+	@include respond-to(handhelds)
+	{
+		justify-content: center;
+	}
+	.icon
+	{
 		font-weight: 400;
-		display: inline-block;
-		text-decoration: none;
-		color: $white;
+
 		position: relative;
+
+		display: inline-block;
+
+		padding: 34px;
+
+		transition-duration: .3s;
+		transition-property: background;
+		transform: perspective(1px) translateZ(0);
+		text-decoration: none;
+
+		color: $white;
 		border-radius: 999rem;
 		background-color: $aqua;
-		padding: 34px;
-		transform: perspective(1px) translateZ(0);
-		transition-duration: 0.3s;
-		transition-property: background;
-		&:not(:last-child) {
+		&:not(:last-child)
+		{
 			margin-right: 20px;
 		}
-		&::before {
-			position: absolute;
+		&::before
+		{
 			font-size: 28px;
+
+			position: absolute;
 			top: 50%;
 			left: 50%;
+
 			transform: translate(-50%, -50%);
 		}
-		&:hover {
+		&:hover
+		{
 			background-color: $dark-black;
 		}
 	}
 }
 
-.video__watch {
-	flex: 1 1 100%;
+.video__watch
+{
 	border-radius: 7px;
+
+	flex: 1 1 100%;
+	@include respond-to(handhelds)
+	{
+		width: 200px;
+		height: auto;
+	}
 }
