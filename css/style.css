@@ -103,7 +103,11 @@
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 600;
+}
+
+.logo__link {
   color: #1ab798;
+  text-decoration: none;
 }
 
 .nav {
