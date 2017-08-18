@@ -59,34 +59,29 @@
 	}
 }
 
-.btn {
-	border-radius: 3px;
-	color: $white;
-	padding: 10px 20px;
-	display: inline-block;
-	font-size: 20px;
-	font-family: $opensans;
-	outline: none;
-	border: none;
-	&--header {
-		margin-left: 13px;
-		margin-top: 80px;
-		padding-left: 50px;
-		background-color: $sea-green;
-	}
-	&:hover {
-		cursor: pointer;
-	}
-}
 
-.icon {
+
+.link.icon {
 	font-weight: 600;
 	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 20px;
+	padding-left: 55px;
+	border-radius: 3px;
+	background-color: $sea-green;
+	color: $white;
+	margin-top: 75px;
+	display: inline-block;
 	&::before {
 		font-size: 24px;
 		position: absolute;
-		left: -40px;
-		top: -22px;
+		left: 22px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	span {
+		font-family: $opensans;
 	}
 }
 
